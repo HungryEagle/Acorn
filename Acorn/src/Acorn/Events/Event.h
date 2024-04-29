@@ -1,5 +1,5 @@
 #pragma once
-
+#include<acpch.h>
 #include "Acorn/Core.h"
 
 namespace Acorn {
@@ -71,7 +71,7 @@ namespace Acorn {
 		Event& m_Event;
 	};
 
-	//inline std::ostream& operator<<(std::ostream& os, const Event& e) {
-	//	return os << e.ToString();
-	//}
+	inline std::ostream& operator<<(std::ostream& os, const Event& e) {
+		return os << e.ToString();
+	}
 }

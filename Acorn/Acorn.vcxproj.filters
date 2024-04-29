@@ -7,6 +7,9 @@
     <Filter Include="Acorn\Events">
       <UniqueIdentifier>{9CF60549-8859-95ED-31DF-CDA31D216170}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Acorn.h" />
@@ -34,9 +37,13 @@
     <ClInclude Include="src\Acorn\Log.h">
       <Filter>Acorn</Filter>
     </ClInclude>
-    <ClInclude Include="src\Acorn\acpch.h">
+    <ClInclude Include="src\Acorn\Window.h">
       <Filter>Acorn</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\acpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Acorn\Application.cpp">
@@ -45,8 +52,9 @@
     <ClCompile Include="src\Acorn\Log.cpp">
       <Filter>Acorn</Filter>
     </ClCompile>
-    <ClCompile Include="src\Acorn\acpch.cpp">
-      <Filter>Acorn</Filter>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>Platform</Filter>
     </ClCompile>
+    <ClCompile Include="src\acpch.cpp" />
   </ItemGroup>
 </Project>

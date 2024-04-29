@@ -7,7 +7,7 @@
 namespace Acorn {
 
 	Application::Application() {
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application() {
@@ -15,9 +15,8 @@ namespace Acorn {
 	}
 
 	void Application::Run() {
-		WindowsResizeEvent e(1280, 720);
-		AC_TRACE(e.ToString());
-
-		while (true);
+		while (m_Running) {
+			m_Window->OnUpdate();
+		}
 	}
 }
