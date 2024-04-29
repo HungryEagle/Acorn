@@ -4,6 +4,9 @@
     <Filter Include="Acorn">
       <UniqueIdentifier>{B869CF0C-247E-F7BD-EDFF-9A1D59D3F3EE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Acorn\Events">
+      <UniqueIdentifier>{9CF60549-8859-95ED-31DF-CDA31D216170}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Acorn.h" />
@@ -16,7 +19,22 @@
     <ClInclude Include="src\Acorn\EntryPoint.h">
       <Filter>Acorn</Filter>
     </ClInclude>
+    <ClInclude Include="src\Acorn\Events\ApplicationEvent.h">
+      <Filter>Acorn\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Acorn\Events\Event.h">
+      <Filter>Acorn\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Acorn\Events\KeyEvent.h">
+      <Filter>Acorn\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Acorn\Events\MouseEvent.h">
+      <Filter>Acorn\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Acorn\Log.h">
+      <Filter>Acorn</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Acorn\acpch.h">
       <Filter>Acorn</Filter>
     </ClInclude>
   </ItemGroup>
@@ -25,6 +43,9 @@
       <Filter>Acorn</Filter>
     </ClCompile>
     <ClCompile Include="src\Acorn\Log.cpp">
+      <Filter>Acorn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Acorn\acpch.cpp">
       <Filter>Acorn</Filter>
     </ClCompile>
   </ItemGroup>

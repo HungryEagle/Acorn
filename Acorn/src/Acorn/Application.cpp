@@ -1,4 +1,8 @@
+#include "acpch.h"
 #include "Application.h"
+
+#include "Acorn/Events/ApplicationEvent.h"
+#include "Acorn/Log.h"
 
 namespace Acorn {
 
@@ -11,8 +15,9 @@ namespace Acorn {
 	}
 
 	void Application::Run() {
-		while (true) {
+		WindowsResizeEvent e(1280, 720);
+		AC_TRACE(e.ToString());
 
-		}
+		while (true);
 	}
 }

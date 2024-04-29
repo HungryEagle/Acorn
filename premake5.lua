@@ -17,6 +17,9 @@ project "Acorn"
 	targetdir ("bin/" ..outputsdir.. "/%{prj.name}")
 	objdir ("bin-int/" ..outputsdir.. "/%{prj.name}")
 
+	pchheader "acpch.h"
+	pchsource "Acorn/src/Acorn/acpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
@@ -25,6 +28,7 @@ project "Acorn"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
